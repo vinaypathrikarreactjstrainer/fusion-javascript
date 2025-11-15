@@ -40,7 +40,7 @@ console.log('value of b = ', --b);
     &&(AND) : if all the conditions is true it is true
               if one of the condition get false it will false
     ||(OR) :  if all the condition is true it is true
-              if one of the condition get false it will be true
+              if one of the condition get true it will be true
     !(NOT) :  if condition is true then it will be false
               if condition is false then it will be true
 */
