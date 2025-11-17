@@ -13,6 +13,7 @@ console.log('Javascript: Conditions');
 
 // assignment
 // var val_1 = 1234, val_2 = 'Fusion'; 
+// identify is it girl or boy based on their names
 
 var msg = "Choose one of the following color \n";
 msg += "A] Red \n";
