@@ -35,4 +35,44 @@ function getUsers() {
     }
     console.log('users = ', users);
 }
-getUsers();
+// getUsers();
+
+// take inputs from array & insert into another array using function
+
+const employee = ['Shweta', 'Muskan', 'Priyanka'];
+const myEmployee = [];
+
+function getEmployeeName(person) {
+    console.log('person => ', person);
+    for(let i = 0; i < employee.length; i++){
+        myEmployee.push(person[i]);
+    }
+    console.log('myEmployee => ', myEmployee);
+}
+getEmployeeName(employee);
+
+
+
+const xyz = [
+    ['Priya', 12332323, 'Pune'],
+    ['Muskan', 343453453535, 'Banguluru'],
+    ['Shruti', 656453534, 'Chennai'],
+]
+console.log(xyz);
+
+function abc(){
+    for(let p = 0; p < xyz.length; p++){
+        // inner loop
+        for(let r = 0; r < xyz[p].length; r++) {
+            // getUserInfo(p[r])
+            console.log('p[r]', xyz[p][r]);
+        }
+    }
+}
+abc();
+
+const numArr = [11, 12, 13];
+let s = numArr;
+console.log('numArr ',numArr);
+console.log('s ',s, s.join('-'));
+console.log('numArr ',numArr);
