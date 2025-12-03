@@ -47,7 +47,7 @@ const getInfos = (name, city, phone, company) => {
     }
     console.log('myEmployee => ', myEmployee);
 }
-
+/*
 const addition = (x, y) => console.log(`Addition of ${x} + ${y} = `, x + y);
 const subtraction = (x, y) => {
     (x < y) 
@@ -77,3 +77,17 @@ calculator('add');
 calculator('sub');
 calculator('multi');
 calculator('devide');
+*/
+
+const calculator = (choice, num1, num2, operator) => {
+    let statment = `${num1} ${operator} ${num2}`;
+    choice == 'add'
+    ? console.log(`${statment} = ${num1 + num2}`)
+    : null
+
+    choice == 'sub'
+    ? console.log(`${statment} = ${num1 - num2}`)
+    : null
+}
+
+calculator('sub', 12, 10, '-');
