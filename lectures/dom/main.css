@@ -1,0 +1,78 @@
+/* FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+MX+Guides&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  transition: all 0.8s ease-in-out;
+}
+/* variables */
+:root {
+  --background-grey: #e0e0e0;
+  --background-black: #232821;
+  --bg-light-grey: #f0f0f0;
+  --border-dark: #d0d0d0;
+  --border-light: #e0e0e0;
+  --border-red: transparent;
+  --bg-color-1: #fec;
+  --bg-color-2: rgb(120, 255, 124);
+  --bg-color-3: rgb(86, 81, 250);
+  --bg-color-4: rgb(243, 231, 64);
+  --bg-color-5: rgb(110, 38, 115);
+}
+html,
+body {
+  background-color: var(--background-grey);
+  font-family: "Playwrite MX Guides", cursive;
+}
+
+.hide {
+  display: none;
+}
+
+/* header */
+header {
+  background-color: var(--background-black);
+  padding: 10px;
+}
+header .logo,
+header .title {
+  display: inline-block;
+  vertical-align: middle;
+}
+header .logo {
+  border: 1px solid #fec201;
+  padding: 5px;
+  color: #fec201;
+  border-radius: 8px;
+}
+header .title {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.8em;
+  width: 85%;
+  text-align: center;
+  color: wheat;
+}
+
+#container {
+  padding: 50px 80px;
+  border: 1px solid var(--border-red);
+}
+h1, h3, ul {
+    display: block;
+    font-family: "Roboto", sans-serif;
+}
+
+button {
+  display: inline-block;
+  padding: 8px 12px;
+  margin: 10px 5px;
+  text-align: center;
+  border: 1px solid #808080;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
