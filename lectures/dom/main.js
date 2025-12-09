@@ -66,3 +66,37 @@ for (let x = 0; x < friends.length; x++) {
   friends[x].style.backgroundColor = "#fec201";
   friends[x].style.marginBottom = "5px";
 }
+
+// variable
+let shweta, akshay, summary, allParagraphs, allAnchorTag;
+// shweta = document.getElementById('shweta');
+/*
+    querySelector() : 
+        * it access id & class both
+        * it will return the first match of the element
+*/
+shweta = document.querySelector('#shweta');
+console.log('shweta => ', shweta);
+console.log('shweta  inner text=> ', shweta.innerText = "Anjali", shweta);
+
+summary = document.querySelector(".summary");
+console.log('summary => ', summary);
+
+/*
+querySelectorAll() : 
+* it access id & class both
+* it will return the collection of the all elements
+*/
+allParagraphs = document.querySelectorAll('.summary');
+console.log('summary with all ele => ', allParagraphs);
+
+allAnchorTag = document.querySelectorAll('a');
+console.log('all anchor tags => ', allAnchorTag);
+
+// innerHTML = set the html content
+
+let boxImg = document.querySelector('#box-img');
+// boxImg.innerHTML = "<h1>Fusion</h1>";
+boxImg.innerHTML = `<div class='img'>
+                        <img src='https://convergesolve.com/wp-content/themes/wotech/img/logo/logo@2x.svg' alt = '' />
+                    </div>`
