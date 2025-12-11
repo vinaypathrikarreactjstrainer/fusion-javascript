@@ -1,0 +1,117 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+:root {
+    --bg-sec-portfolio : #232128;
+}
+html, body{
+    font-family: "Roboto", sans-serif;
+}
+/* HEADER */
+header {
+    background-color: #232128;
+    padding: 10px;
+}
+header .logo,
+header #navbar{
+    display: inline-block;
+    vertical-align: middle;
+}
+header .logo {
+    border: 3px double #fec202;
+    color: #fec202;
+    padding: 6px;
+    text-align: center;
+    width: 100px;
+}
+header #navbar {
+    text-align: right;
+    color: wheat;
+    padding: 6px;
+    width: calc(100vw - 180px)
+}
+.menu {
+    list-style-type: none;
+}
+.menu li {
+    display: inline-block;
+    margin: 0px 5px;
+}
+.menu li a {
+    display: block;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+    color: wheat;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+.menu li a:hover {
+    color: #fec202;
+    border-bottom: 1px solid #fec202;
+}
+.section {
+    padding: 60px 100px;
+    margin: 0 auto;
+}
+#portfolio{
+    background: url('../img/bg-portfolio.jpg') center fixed no-repeat;
+    background-size: cover;
+}
+/* Card */
+.card {
+    display: inline-block;
+    vertical-align: middle;
+    width: 23%;
+    padding: 20px;
+    margin: 10px;
+    background-color: rgba(0,0,0,0.4);
+    border: 1px solid #808080;
+    text-align: center;
+}
+.card h1 {
+    font-size: 2.2em;
+    font-weight: 500;
+    color: #D92134;
+}
+.card h2 {
+    font-size: 2em;
+    font-weight: 500;
+    color: white;
+    padding: 20px auto 15px;
+}
+.card p {
+    font-size: 1em;
+    color: #ccc;
+    font-weight: normal;
+    text-transform: capitalize;
+}
+span.users {
+    background-color: #E41A37;
+    font-size: 1.4em;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    border-radius: 10px;
+    padding: 6px 10px;
+    color: white;
+    margin: 20px;
+}
+
+
+.box {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 6px 10px;
+    margin: 10px;
+    font-size: 1.2em;
+    background-color: #E41A37;
+    color: white;
+    text-align: center;
+}
