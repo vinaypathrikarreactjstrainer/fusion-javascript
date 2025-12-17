@@ -1,0 +1,76 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+:root {
+    --bg-sec-portfolio : #232128;
+}
+html, body{
+    font-family: "Roboto", sans-serif;
+}
+.hide {
+    display: none;
+}
+/* HEADER */
+header {
+    background-color: #232128;
+    padding: 10px;
+}
+header .logo,
+header #navbar{
+    display: inline-block;
+    vertical-align: middle;
+}
+header .logo {
+    border: 3px double #fec202;
+    color: #fec202;
+    padding: 6px;
+    text-align: center;
+    width: 100px;
+}
+header #navbar {
+    text-align: center;
+    color: wheat;
+    padding: 6px;
+    width: calc(100vw - 180px);
+}
+
+#menu {
+    list-style-type: none;
+}
+#menu li {
+    display:inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+#menu li a {
+    display: block;
+    border: 1px solid white;
+    text-decoration: none;
+    padding: 6px 12px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    font-weight: 500;
+    color: white;
+}
+
+.section {
+    padding: 30px 50px;
+    margin: 0 auto;
+}
+
+.card{
+    display: inline-block;
+    vertical-align: top;
+    width: 22%;
+    background-color: #fcfcfc;
+    border: 1px solid #e0e0e0;
+    padding: 10px;
+    margin: 10px 5px;
+    
+}

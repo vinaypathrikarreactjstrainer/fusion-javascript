@@ -54,7 +54,7 @@ function createGallery(list) {
 }
 
 // call createGallery func. on window load
-// window.onload = createGallery(food);
+window.onload = createGallery(food);
 
 const students = [
     {name: "shweta", age : 20, course : 'java fullstack', phone : 112233, city: 'pune'},
