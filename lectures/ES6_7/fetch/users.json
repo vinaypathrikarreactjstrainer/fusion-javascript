@@ -1,0 +1,42 @@
+[
+    {
+        "id" : 1,
+        "name" : "Shweta Riyal",
+        "email" : "shweta@gmail.com",
+        "address" : {
+            "city" : "Pune",
+            "zipCode" : 431001,
+            "state" : "Maharashtra"
+        }
+    },
+    {
+        "id" : 2,
+        "name" : "Muskan Shaikh",
+        "email" : "muskan@gmail.com",
+        "address" : {
+            "city" : "Banguluru",
+            "zipCode" : 686887,
+            "state" : "Karnataka"
+        }
+    },
+    {
+        "id" : 2,
+        "name" : "Akshay Kashyap",
+        "email" : "akshay@gmail.com",
+        "address" : {
+            "city" : "Mumbail",
+            "zipCode" : 423789,
+            "state" : "Maharashtra"
+        }
+    },
+    {
+        "id" : 3,
+        "name" : "Sahil Kolhe",
+        "email" : "sahil@gmail.com",
+        "address" : {
+            "city" : "Nashik",
+            "zipCode" : 64938,
+            "state" : "Maharashtra"
+        }
+    }
+]

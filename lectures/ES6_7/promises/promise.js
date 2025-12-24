@@ -68,11 +68,11 @@ Promise.all([anjali, muskan, rohini])
        .catch(error => console.log(error));
 
 const vinay = new Promise(
-    (res, rej) => setTimeout(() => res('Vinay...'), 10000)
+    (res, rej) => setTimeout(() => rej('Vinay...'), 5020)
 );
 
 const amol = new Promise(
-    (pass, fail) => setTimeout(() => pass('Amol..'), 5000)
+    (resolve, reject) => setTimeout(() => resolve('Amol..'), 5000)
 );
 // race: it will handle multiple Promises also, but it will return a Promise which is faster or returning the resulting value first
 Promise.race([vinay, amol])

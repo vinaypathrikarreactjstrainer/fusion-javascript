@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #171e2e;
+}
+#container {
+    margin: 0px;
+    padding: 50px 80px;
+    width: 100%;
+}
+.action {
+    background-color: rgba(255,255,255,0.4);
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.action button {
+    padding: 8px;
+    background-color: rgba(139, 255, 22, 0.5);
+    border: 1px solid transparent;
+    outline: none;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 6px;
+}
+#grid.card {
+    display: inline-block;
+    vertical-align: top;
+    width: 23%;
+    min-height: 250px;
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+}
+#grid.card p {
+    font-size: 16px;
+    line-height: 30px;
+}
+#grid.card p b {
+    color: #620c8d;
+}
+#grid.card h1 {
+    font-size: 24px;
+    color: #170a79;
+    margin-bottom: 20px;
+}
+
+#list.card {
+    display: block;
+    /* vertical-align: top; */
+    width: 100%;
+    /* min-height: 250px; */
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+}
+#list.card p {
+    font-size: 16px;
+    line-height: 30px;
+    display: inline;
+}
+#list.card p b {
+    color: #620c8d;
+}
+#list.card h1 {
+    font-size: 24px;
+    color: #170a79;
+    margin-bottom: 20px;
+}
