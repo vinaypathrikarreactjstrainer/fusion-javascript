@@ -10,7 +10,6 @@ fetch() // it has two args. 1. URL 2. optional method ({obj})
     .then() // we received the data from server in the form of json. we need to convert this data into the javascript object
     .then() // we get actual data. we can do the operations here
     .catch() // if there is any error received from the server catch method invoke
-
 */
 const userURL = './users.json';
 // fetch method

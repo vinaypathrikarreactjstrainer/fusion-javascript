@@ -29,7 +29,6 @@ const showUser = list => {
     section.innerHTML = div;
 }
 
-
 const listView = () => {
     let card = document.querySelectorAll('.card');
     console.log('card => ', card);
