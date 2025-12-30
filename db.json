@@ -1,0 +1,51 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "users": [
+    {
+      "id": 1,
+      "fullName": "Shweta Riyal",
+      "email": "shweta@gmail.com",
+      "phone": "9988776655"
+    },
+    {
+      "fullName": "Anjali",
+      "email": "anjali@gmail.com",
+      "phone": "6898379",
+      "id": 2
+    },
+    {
+      "fullName": "Akshay",
+      "email": "akshay@gmail.com",
+      "phone": "68687987",
+      "id": 3
+    },
+    {
+      "fullName": "sakshi",
+      "email": "sakshi@gmail.com",
+      "phone": "347394909",
+      "id": 4
+    },
+    {
+      "fullName": "Dikshant",
+      "email": "dikshant@gmail.com",
+      "phone": "6348789379",
+      "id": 5
+    }
+  ]
+}
