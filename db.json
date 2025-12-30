@@ -18,27 +18,21 @@
   },
   "users": [
     {
-      "id": 1,
-      "fullName": "Shweta Riyal",
-      "email": "shweta@gmail.com",
-      "phone": "9988776655"
-    },
-    {
       "fullName": "Anjali",
       "email": "anjali@gmail.com",
       "phone": "6898379",
       "id": 2
     },
     {
-      "fullName": "Akshay",
+      "fullName": "Akshay Kumar",
       "email": "akshay@gmail.com",
-      "phone": "68687987",
+      "phone": "686879873434",
       "id": 3
     },
     {
-      "fullName": "sakshi",
+      "fullName": "sakshi Patil",
       "email": "sakshi@gmail.com",
-      "phone": "347394909",
+      "phone": "0070898989",
       "id": 4
     },
     {
@@ -46,6 +40,18 @@
       "email": "dikshant@gmail.com",
       "phone": "6348789379",
       "id": 5
+    },
+    {
+      "fullName": "Shruti",
+      "email": "shruti@gmail.com",
+      "phone": "3749834789",
+      "id": 6
+    },
+    {
+      "fullName": "Shruti",
+      "email": "shruti@gmail.com",
+      "phone": "3749834789",
+      "id": 7
     }
   ]
 }

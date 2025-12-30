@@ -1,21 +1,21 @@
 console.log("javascript - map method");
 
-const arr = ["Vinay", "Mumbai", 2128, true, null, { id: 1, product: "Apple" }];
-const num = [1, 2, 3, 4, 5, 6];
+// const arr = ["Vinay", "Mumbai", 2128, true, null, { id: 1, product: "Apple" }];
+// const num = [1, 2, 3, 4, 5, 6];
 
-arr.forEach((name, ind) => {
-  console.log("name ", name, ind);
-});
+// arr.forEach((name, ind) => {
+//   console.log("name ", name, ind);
+// });
 
-num.forEach((number, ind) => {
-  let multiplyBy2 = number * 2;
-  console.log("multiplyBy 2 => ", multiplyBy2);
-});
+// num.forEach((number, ind) => {
+//   let multiplyBy2 = number * 2;
+//   console.log("multiplyBy 2 => ", multiplyBy2);
+// });
 
-let newArr = num.map((digits, index) => {
-  console.log(digits, index);
-  return digits * 2;
-});
+// let newArr = num.map((digits, index) => {
+//   console.log(digits, index);
+//   return digits * 2;
+// });
 
 // variables
 // json-server :  npm install -g json-server@^0.17.4
@@ -24,12 +24,21 @@ let fullName,
   email,
   btn_add,
   btn_cancel,
-  newUser = {};
+  userUI = "",
+  newUser = {},
+  userData = document.querySelector("#userData"),
+  btn_update = document.querySelector("#btn_update");
 fullName = document.querySelector("#fullName");
 phone = document.querySelector("#phone");
 email = document.querySelector("#email");
 btn_add = document.querySelector("#btn_add");
 btn_cancel = document.querySelector("#btn_cancel");
+
+// show user
+fetch(`http://localhost:3000/users`)
+  .then((resp) => resp.json())
+  .then((data) => showUser(data))
+  .catch((err) => console.error(err));
 
 // validation
 const validation = () => {
@@ -43,12 +52,15 @@ const validation = () => {
     return isValid;
   } else if (fullName.value == "" || fullName.value == undefined) {
     alert("Enter Full Name");
+    fullName.focus();
     return isValid;
   } else if (email.value == "" || email.value == undefined) {
     alert("Enter Email");
+    email.focus();
     return isValid;
   } else if (phone.value == "" || phone.value == undefined) {
     alert("Enter Phone");
+    phone.focus();
     return isValid;
   } else {
     return (isValid = true);
@@ -57,7 +69,7 @@ const validation = () => {
 
 // addUser
 const addUser = (e) => {
-    e.preventDefault();
+  e.preventDefault();
   if (validation() == true) {
     // object
     newUser = {
@@ -77,6 +89,75 @@ const addUser = (e) => {
     });
   }
 };
+let userURL = `http://localhost:3000/users`;
+// edit User
+const editUser = (userId) => {
+  alert("clicked button " + userId);
+  const editURL = `${userURL}/${userId}`;
+  console.log("editURL => ", editURL);
+  // get the existing record of the user
+  fetch(editURL)
+    .then((resp) => resp.json())
+    .then((data) => {
+      fullName.value = data.fullName;
+      email.value = data.email;
+      phone.value = data.phone;
+    })
+    .catch((err) => console.error(err));
+
+  // hide add button
+  btn_add.classList.add("hide");
+  // show update button
+  btn_update.classList.remove("hide");
+
+  // update existing user
+  btn_update.addEventListener("click", () => {
+    if (validation() == true) {
+      fetch(`${editURL}`, {
+        method: "PUT",
+        headers: {
+          "Content-type": "application/json",
+        },
+        body: JSON.stringify({
+          fullName: fullName.value,
+          email: email.value,
+          phone: phone.value,
+        }),
+      });
+    }
+  });
+};
+
+const showUser = (user) => {
+  user.forEach((person) => {
+    userUI += `<tr>
+                  <td>${person.id}</td>
+                  <td>${person.fullName}</td>
+                  <td>${person.email}</td>
+                  <td>${person.phone}</td>
+                  <td>
+                    <button type="button" onclick = "editUser(${person.id})">Edit</button>
+                    <button type="button" onclick = "deleteUser(${person.id})">Delete</button>
+                  </td>
+               </tr>`;
+  });
+  userData.innerHTML = userUI;
+};
+
+// delete user
+const deleteUser = (personId) => {
+  fetch(`${userURL}/${personId}`, {
+    method : 'DELETE'
+  })
+  .then(resp => resp.json())
+  .then(data => console.log(data))
+  .catch(err => console.log(err));
+}
 
 // Events
 btn_add.addEventListener("click", addUser);
+btn_cancel.addEventListener('click', () => {
+  fullName.value = '';
+  email.value = '';
+  phone.value = '';
+})
