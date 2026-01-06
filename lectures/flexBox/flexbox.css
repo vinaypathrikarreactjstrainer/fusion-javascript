@@ -1,0 +1,91 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html,body{
+    font-family: "Open Sans", sans-serif;
+    background-color: #464545;
+}
+.container {
+    border: 2px solid white;
+    display: flex;
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column-reverse; */
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+    flex-flow: row wrap;
+    /* justify-content: flex-end; */
+    /* justify-content: space-around; */
+    justify-content: center;
+    /* justify-content: space-around; */
+    /* justify-content: space-evenly; */
+    /* align-items: flex-end; */
+    align-items:stretch;
+    /* align-content: center; */
+    align-content: space-evenly;
+    height: 100vh;
+    gap: 10px;
+}
+.box {
+    width: 200px;
+    height: 100px;
+    border: 1px solid white;
+    /* margin: 5px; */
+    display: flex;
+}
+#box_1 {
+    background-color: lightgreen;
+}
+#box_2 {
+    background-color: lightsalmon;
+    /* flex-grow: 300px; */
+    flex-basis: 300px;
+}
+#box_3 {
+    background-color: lightskyblue;
+}
+#box_4 {
+    background-color: lightyellow;
+}
+#box_5 {
+    background-color: lightseagreen;
+}
+
+#wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.card {
+    width: 400px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items:center;
+    gap:20px;
+}
+.box_img {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+    width: 100%;
+}
+.backgr-color {
+    height: 150px;
+    /* width: 50%; */
+    flex-basis: 45%;
+}
+#box_left {
+    background-color: lightgreen;
+}
+#box_right {
+    background-color: lightsalmon;
+}
