@@ -1,0 +1,80 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+MX+Guides&display=swap');
+/* table.css */
+@import url('table.css');
+/* dialog.css */
+@import url('dialog.css');
+
+/* variables */
+:root {
+    --background-grey : #e0e0e0;
+    --background-black : #232821;
+    --bg-light-grey : #f0f0f0;
+    --border-dark: #d0d0d0;
+    --border-light: #e0e0e0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+html, body{
+    background-color: var(--background-grey);
+    font-family: "Playwrite MX Guides", cursive;
+}
+
+.hide {
+    display: none;
+}
+
+/* header */
+header {
+    background-color: var(--background-black);
+    padding: 10px;
+}
+header .logo,
+header .title {
+    display: inline-block;
+    vertical-align: middle;
+}
+header .logo {
+    border: 1px solid #fec201;
+    padding: 5px;
+    color: #fec201;
+    border-radius: 8px;
+}
+header .title {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.8em;
+    width: 85%;
+    text-align: center;
+    color: wheat;
+}
+
+.action{
+    margin: 0px auto;
+    width: 100%;
+    text-align: center;
+    background-color: var(--bg-light-grey);
+    padding: 5px 10px;
+    border-bottom: 1px solid var(--background-grey);
+}
+.action button {
+    padding: 8px 12px;
+    background-color: transparent;
+    border: 1px solid var(--border-dark);
+    font-size: 1.1em;
+    cursor: pointer;
+    border-radius: 6px;
+}
+/* Sections */
+.section {
+    margin: 10px auto;
+    width:95%;
+}

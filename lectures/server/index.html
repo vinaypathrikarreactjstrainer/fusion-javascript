@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript - CRUD</title>
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <!-- Project css -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body>
+    <main id="container">
+      <header>
+        <!-- logo -->
+        <div class="logo">Fusion</div>
+        <!-- title -->
+        <div class="title">...Fusion Software Institute...</div>
+      </header>
+      <!-- Action Buttons -->
+      <div class="action">
+        <button type="button" id="student" onclick="getData('students')">
+          <i class="fa-solid fa-users"></i> Student
+        </button>
+        <button type="button" id="faculty" onclick="getData('faculty')">
+          <i class="fa-solid fa-user"></i>
+          Faculty
+        </button>
+        <button type="button" id="admin" onclick="getData('admin')">
+          <i class="fa-solid fa-user-tie"></i>
+          Admin
+        </button>
+        <button type="button" id="staff" onclick="getData('staff')">
+          <i class="fa-solid fa-user-secret"></i>
+          Staff
+        </button>
+      </div>
+      <!-- Main Content -->
+      <section id="data-users" class="section">
+        <!-- Here we are going to show Students/Faculty/Admin data -->
+        <!-- Student Table -->
+        <table
+          width="100%"
+          cellspacing="0"
+          cellpadding="0"
+          border="1"
+          id="table-student"
+        >
+          <caption>
+            <h2>Students</h2>
+            <button type="button" id="add_Student">
+              <i class="fa-solid fa-user-plus"></i>
+            </button>
+          </caption>
+          <thead>
+            <tr>
+              <th>Sr.No.</th>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Phone</th>
+              <th>Course</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="data-students"></tbody>
+        </table>
+        <!-- Faculty Table -->
+        <table
+          width="100%"
+          cellspacing="0"
+          cellpadding="0"
+          border="1"
+          id="table-faculty"
+          class="hide"
+        >
+          <caption>
+            Faculty
+          </caption>
+          <thead>
+            <tr>
+              <th>Sr.No.</th>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Phone</th>
+              <th>Subject</th>
+            </tr>
+          </thead>
+          <tbody id="data-faculty"></tbody>
+        </table>
+        <!-- Admin Table -->
+        <table
+          width="100%"
+          cellspacing="0"
+          cellpadding="0"
+          border="1"
+          id="table-admin"
+          class="hide"
+        >
+          <caption>
+            Admin
+          </caption>
+          <thead>
+            <tr>
+              <th>Sr.No.</th>
+              <th>Name</th>
+              <th>Role</th>
+              <th>Phone</th>
+              <th>Email</th>
+            </tr>
+          </thead>
+          <tbody id="data-admin"></tbody>
+        </table>
+        <!-- Staff Table -->
+        <table
+          width="100%"
+          cellspacing="0"
+          cellpadding="0"
+          border="1"
+          id="table-staff"
+          class="hide"
+        >
+          <caption>
+            Staff
+          </caption>
+          <thead>
+            <tr>
+              <th>Sr.No.</th>
+              <th>Name</th>
+              <th>Company</th>
+              <th>Employee Id</th>
+              <th>Designation</th>
+            </tr>
+          </thead>
+          <tbody id="data-staff"></tbody>
+        </table>
+      </section>
+      <!-- Backdrop -->
+      <div id="backdrop" class="hide"></div>
+      <!-- Dialog box -->
+      <div id="user-form" class="hide">
+        <!-- header -->
+        <div id="form-header">
+          <h3 id="dialog-title">Add Student</h3>
+          <button type="button" id="btn_close" class="cancel">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+        <!-- form body -->
+        <section class="form-body">
+          <!-- FORM STUDENT -->
+          <div id="form-student">
+            <form id="student_form">
+              <input
+                type="text"
+                id="std_name"
+                name="name"
+                placeholder="Full Name"
+              />
+              <input
+                type="email"
+                id="std_email"
+                name="email"
+                placeholder="Email"
+              />
+              <input
+                type="text"
+                id="std_phone"
+                name="phone"
+                placeholder="Contact Number"
+              />
+              <input
+                type="text"
+                id="std_course"
+                name="course"
+                placeholder="Course"
+              />
+            </form>
+          </div>
+        </section>
+        <!-- footer -->
+        <footer>
+          <button type="button" id="btn_cancel" class="cancel">Cancel</button>
+          <button type="button" id="btn_save">Add</button>
+          <button type="button" id="btn_update" class="hide">Update</button>
+        </footer>
+      </div>
+    </main>
+    <script src="assets/script/main.js" ></script>
+    <script src="assets/script/master.js" type="module" ></script>
+  </body>
+</html>
