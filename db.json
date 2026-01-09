@@ -1,57 +1,89 @@
 {
-  "posts": [
+  "students": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "name": "Akshay Kashyap",
+      "email": "akshay@gmail.com",
+      "phone": "9970367273",
+      "course": "Java FullStack",
+      "id": 1
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
-  "profile": {
-    "name": "typicode"
-  },
-  "users": [
-    {
-      "fullName": "Anjali",
-      "email": "anjali@gmail.com",
-      "phone": "6898379",
+      "name": "Harsh",
+      "email": "harsh@gmail.com",
+      "phone": "4356646757678",
+      "course": "DevOps & AWS",
       "id": 2
     },
     {
-      "fullName": "Akshay Kumar",
-      "email": "akshay@gmail.com",
-      "phone": "686879873434",
-      "id": 3
+      "id": 3,
+      "name": "Akansha",
+      "email": "akansha@gmail.com",
+      "phone": "9970232821",
+      "course": "Robotics & ML",
+      "userId": 3
     },
     {
-      "fullName": "sakshi Patil",
-      "email": "sakshi@gmail.com",
-      "phone": "0070898989",
-      "id": 4
+      "id": 4,
+      "name": "Aishwarya",
+      "email": "aishwarya@gmail.com",
+      "phone": "9970848469",
+      "course": "Data Science",
+      "userId": 4
     },
     {
-      "fullName": "Dikshant",
-      "email": "dikshant@gmail.com",
-      "phone": "6348789379",
+      "name": "sonal",
+      "email": "sonal@gmail.com",
+      "phone": "365789212345678",
+      "course": "AI & ML + Java Fullstack",
       "id": 5
     },
     {
-      "fullName": "Shruti",
-      "email": "shruti@gmail.com",
-      "phone": "3749834789",
+      "name": "Priyanka",
+      "email": "priyankak@gmail.com",
+      "phone": "98789798789",
+      "course": "AI & ML + Java Fullstack + Python",
       "id": 6
+    }
+  ],
+  "faculty": [
+    {
+      "id": "1",
+      "name": "Vinay",
+      "email": "vinay@gmail.com",
+      "phone": "9970337273",
+      "subject": "MERN stack"
     },
     {
-      "fullName": "Shruti",
-      "email": "shruti@gmail.com",
-      "phone": "3749834789",
-      "id": 7
+      "id": "2",
+      "name": "Nandini",
+      "email": "nandini@gmail.com",
+      "phone": "9850546479",
+      "subject": "Java Fullstack"
+    }
+  ],
+  "admin": [
+    {
+      "id": "1",
+      "name": "Priyanka",
+      "email": "priyanka@gmail.com",
+      "phone": "8880123456",
+      "role": "System Admin"
+    },
+    {
+      "id": "2",
+      "name": "Manish",
+      "email": "manish@gmail.com",
+      "phone": "8880987654",
+      "role": "Network Admin"
+    }
+  ],
+  "staff" : [
+    {
+      "id" : 1,
+      "name" : "Sakshi Gaikwad",
+      "company" : "Amdocs",
+      "designation" : "System Administration",
+      "employeeId" : "AMD2128"
     }
   ]
 }

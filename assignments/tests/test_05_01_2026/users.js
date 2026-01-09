@@ -23,8 +23,9 @@ const addUser = (event) => {
     console.log('person => ', person);
     // insert the person obj into the users array
     users.push(person);
+    localStorage.setItem('userList',JSON.stringify(users)) || []
     restForm(event);
-    localStorage.setItem('userList',JSON.stringify(users));
+    // showUsers(users);
 }
 
 // cancel
@@ -40,8 +41,9 @@ add.addEventListener('click', addUser);
 cancel.addEventListener('click', restForm);
 
 console.log('userList ', JSON.parse(localStorage.getItem('userList')));
-const list = JSON.parse(localStorage.getItem('userList'));
-let ui = '',persons = document.querySelector('#persons');
+const list = JSON.parse(localStorage.getItem('userList')) || [];
+let persons = document.querySelector('#persons');
+let ui = '';
 const showUsers = (personList) => {
     for(let x = 0; x < personList.length; x++){
         ui += `<div class='card'>
@@ -55,14 +57,42 @@ const showUsers = (personList) => {
 }
 showUsers(list);
 
-let girlName = document.querySelector('#girlName'),
-    boyName = document.querySelector('#boyName');
-    // updateGirlName = prompt('Enter girl name');
-    const arr = [
-        {id: 1, name: 'Vinay'},
-        {id: 2, name: 'Rohini'},
-    ]
-    localStorage.setItem('girl', JSON.stringify(arr) );
-    // girlName.textContent = localStorage.getItem('girl');
-    let myList = JSON.parse(localStorage.getItem('girl'))
-    girlName.textContent = myList[1].name;
+// let girlName = document.querySelector('#girlName'),
+//     boyName = document.querySelector('#boyName');
+//     // updateGirlName = prompt('Enter girl name');
+//     const arr = [
+//         {id: 1, name: 'Vinay'},
+//         {id: 2, name: 'Rohini'},
+//     ]
+//     localStorage.setItem('girl', JSON.stringify(arr) );
+//     // girlName.textContent = localStorage.getItem('girl');
+//     let myList = JSON.parse(localStorage.getItem('girl'))
+//     girlName.textContent = myList[1].name;
+
+sessionStorage.setItem('person', 'vinay');
+console.log('person', sessionStorage.getItem('person'));
+title.textContent = sessionStorage.getItem('person');
+
+let light, dark,body, toggle;
+btnThemes = document.querySelector('#btn_themes');
+body = document.querySelector('#body');
+toggle = document.querySelector('#toggle');
+
+const theme = sessionStorage.getItem('themes');
+const inputTheme = document.querySelector('#getTheme');
+// sessionStorage.setItem('themes', false) || '';
+btnThemes.addEventListener('click', () => {
+    sessionStorage.setItem('inputThemes', inputTheme.value);
+    const getTheme = sessionStorage.getItem('inputThemes');
+    console.log('myThemessss', getTheme);
+    if(getTheme === 'dark'){
+        body.classList.remove('light');
+        body.classList.add('dark');
+    } else {
+        body.classList.add('light');
+        body.classList.remove('dark');
+    }
+    
+})
+console.log('myTheme', theme);
+
