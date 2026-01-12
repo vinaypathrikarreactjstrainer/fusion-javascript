@@ -85,5 +85,67 @@
       "designation" : "System Administration",
       "employeeId" : "AMD2128"
     }
+  ],
+  "services" : [
+    {
+      "review" : [
+        {
+          "id" : 1,
+          "icon" : "",
+          "title" : "+10",
+          "description" : "years of experience"
+        },
+        {
+          "id" : 2,
+          "icon" : "",
+          "title" : "+200",
+          "description" : "completed projects"
+        },
+        {
+          "id" : 3,
+          "icon" : "",
+          "title" : "+150",
+          "description" : "happy costumers"
+        },
+        {
+          "id" : 4,
+          "icon" : "",
+          "title" : "+98.9%",
+          "description" : "costomers satisfaction"
+        }
+      ],
+      "offer" : [
+        {
+          "id" : 1,
+          "icon" : "",
+          "title" : "Logo Design",
+          "description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ut eligendi laborum doloribus repellat voluptas deleniti voluptatem sequi accusamus illum!",
+          "url" : "#"
+        },
+        {
+          "id" : 2,
+          "icon" : "",
+          "title" : "Identity Design",
+          "description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ut eligendi laborum doloribus repellat voluptas deleniti voluptatem sequi accusamus illum!",
+          "url" : "#"
+        },
+        {
+          "id" : 3,
+          "icon" : "",
+          "title" : "Packaging Design",
+          "description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ut eligendi laborum doloribus repellat voluptas deleniti voluptatem sequi accusamus illum!",
+          "url" : "#"
+        },
+        {
+          "id" : 4,
+          "icon" : "",
+          "title" : "Product Design",
+          "description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ut eligendi laborum doloribus repellat voluptas deleniti voluptatem sequi accusamus illum!",
+          "url" : "#"
+        }
+      ],
+      "title" : "My design Services",
+      "page" : "Services"
+    }
   ]
 }

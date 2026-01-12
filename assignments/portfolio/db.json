@@ -1,0 +1,64 @@
+{
+  "services" : [
+    {
+      "review" : [
+        {
+          "id" : 1,
+          "icon" : "",
+          "title" : "+10",
+          "description" : "years of experience"
+        },
+        {
+          "id" : 2,
+          "icon" : "",
+          "title" : "+200",
+          "description" : "completed projects"
+        },
+        {
+          "id" : 3,
+          "icon" : "",
+          "title" : "+150",
+          "description" : "happy costumers"
+        },
+        {
+          "id" : 4,
+          "icon" : "",
+          "title" : "+98.9%",
+          "description" : "costomers satisfaction"
+        }
+      ],
+      "offers" : [
+        {
+          "id" : 1,
+          "icon" : "fa-regular fa-user",
+          "title" : "Logo Design",
+          "description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ut eligendi laborum doloribus repellat voluptas deleniti voluptatem sequi accusamus illum!",
+          "url" : "#"
+        },
+        {
+          "id" : 2,
+          "icon" : "fa-regular fa-user",
+          "title" : "Identity Design",
+          "description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ut eligendi laborum doloribus repellat voluptas deleniti voluptatem sequi accusamus illum!",
+          "url" : "#"
+        },
+        {
+          "id" : 3,
+          "icon" : "fa-regular fa-user",
+          "title" : "Packaging Design",
+          "description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ut eligendi laborum doloribus repellat voluptas deleniti voluptatem sequi accusamus illum!",
+          "url" : "#"
+        },
+        {
+          "id" : 4,
+          "icon" : "fa-regular fa-user",
+          "title" : "Product Design",
+          "description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ut eligendi laborum doloribus repellat voluptas deleniti voluptatem sequi accusamus illum!",
+          "url" : "#"
+        }
+      ],
+      "title" : "My design Services",
+      "page" : "Services"
+    }
+  ]
+}

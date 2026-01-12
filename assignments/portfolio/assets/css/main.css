@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    background-color: #c4f8ff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.sections{
+    padding:80px 50px;
+}
+.flexrow {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.flexcol {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-between;
+    gap: 10px;
+}
+.section {
+    padding: 30px 50px;
+}
+.review {
+    width: 23%;
+}
+.offers{
+    width: 48%;
+}
+
+.cards{
+    border: 1px solid #a0a0a0;
+    background-color: white;
+    padding: 10px;
+}
+.col-summary {
+    width: 75%;
+}
+.col-icon{
+    width: 22%;
+}
