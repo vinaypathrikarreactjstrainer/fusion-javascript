@@ -4,25 +4,25 @@
       "review" : [
         {
           "id" : 1,
-          "icon" : "",
+          "icon" : "fa-regular fa-user",
           "title" : "+10",
           "description" : "years of experience"
         },
         {
           "id" : 2,
-          "icon" : "",
+          "icon" : "fa-regular fa-user",
           "title" : "+200",
           "description" : "completed projects"
         },
         {
           "id" : 3,
-          "icon" : "",
+          "icon" : "fa-regular fa-user",
           "title" : "+150",
           "description" : "happy costumers"
         },
         {
           "id" : 4,
-          "icon" : "",
+          "icon" : "fa-regular fa-user",
           "title" : "+98.9%",
           "description" : "costomers satisfaction"
         }
@@ -57,7 +57,7 @@
           "url" : "#"
         }
       ],
-      "title" : "My design Services",
+      "title" : "Fusion Software Institute",
       "page" : "Services"
     }
   ]

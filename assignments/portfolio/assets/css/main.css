@@ -46,3 +46,6 @@ html, body{
 .col-icon{
     width: 22%;
 }
+.review .summary a {
+    display: none;
+}
