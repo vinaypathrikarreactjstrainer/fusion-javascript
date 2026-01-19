@@ -60,5 +60,33 @@
       "title" : "Fusion Software Institute",
       "page" : "Services"
     }
+  ],
+  "customers" : [
+    {
+      "id": 1,
+      "name" : "John",
+      "address": {
+        "street" : "104",
+        "city" : "Boston",
+        "zip": "101101"
+      },
+      "orders": [
+        {
+          "id": 1,
+          "name" : "Apple iPhone",
+          "category": "Electronic",
+          "type" : "mobile",
+          "price" : "$158"
+        },
+        {
+          "id": 2,
+          "name" : "Margarita",
+          "category": "food",
+          "type" : "pizza",
+          "price" : "$5"
+        }
+      ]
+
+    }
   ]
 }
